@@ -1,12 +1,11 @@
-#include <time.h>
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h> 
 
 int main() {
-    srand(time(NULL));
-
-    while (1) {
-        printf("%d\n", (rand() % 7 + 1) * (rand() % 7 + 1));
-        
+    int sum = 0, n = 100;
+    for (int i = 0; i < n; i++) {
+        sum += i;
     }
+    printf("sum = %d\n", sum);
+    printf("Hello world!\n");
+    return 0;
 }
